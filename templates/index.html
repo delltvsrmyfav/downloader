@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Downloader</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <div class="content-wrapper">
+            <header class="header">
+                <div class="header-content">
+                    <h1 class="title">
+                        <i class="fab fa-youtube"></i>
+                        YouTube Video Downloader
+                        <span class="beta-tag">BETA</span>
+                    </h1>
+                    <button id="themeToggle" class="theme-toggle">
+                        <i class="fas fa-sun"></i> </button>
+                </div>
+            </header>
+
+            <main class="main-content">
+                <section class="download-section card">
+                    <h2>Download YouTube Videos</h2>
+                    <div class="input-group">
+                        <input type="text" id="urlInput" placeholder="Enter YouTube URL here..." autocomplete="off">
+                        <button id="getInfoBtn" class="btn primary-btn"><i class="fas fa-info-circle"></i> Get Info</button>
+                    </div>
+
+                    <div id="loadingSpinner" class="spinner" style="display: none;"></div>
+
+                    <div id="errorContainer" class="message-container error-message-container" style="display: none;">
+                        <span id="errorMessage" class="message-text"></span>
+                        <i class="fas fa-times-circle close-message" onclick="hideError()"></i>
+                    </div>
+                    <div id="successContainer" class="message-container success-message-container" style="display: none;">
+                        <span id="successMessage" class="message-text"></span>
+                        <i class="fas fa-check-circle close-message" onclick="hideSuccess()"></i>
+                    </div>
+
+                    <div id="videoInfo" class="video-info" style="display: none;">
+                        <img id="videoThumbnail" class="video-thumbnail" src="" alt="Video Thumbnail">
+                        <div class="video-details">
+                            <h3 id="videoTitle" class="video-title"></h3>
+                            <div class="video-meta">
+                                <span id="videoChannel" class="meta-item"><i class="fas fa-user"></i> </span>
+                                <span id="videoDuration" class="meta-item"><i class="fas fa-clock"></i> </span>
+                                <span id="videoViews" class="meta-item"><i class="fas fa-eye"></i> </span>
+                                <span id="videoUploadDate" class="meta-item"><i class="fas fa-calendar-alt"></i> </span>
+                            </div>
+                            <p id="videoDescription" class="video-description"></p>
+                            <button id="summarizeBtn" class="btn secondary-btn"><i class="fas fa-file-alt"></i> Summarize Description</button>
+                            <div id="summaryContainer" class="summary-container" style="display: none;">
+                                <h4>Video Summary:</h4>
+                                <p id="videoSummary"></p>
+                            </div>
+
+                            <div class="quality-selection">
+                                <label for="qualitySelect">Select Quality:</label>
+                                <select id="qualitySelect" class="quality-select"></select>
+                            </div>
+                            <div class="action-buttons">
+                                <button id="downloadBtn" class="btn primary-btn"><i class="fas fa-download"></i> Download</button>
+                                <a id="externalLink" href="#" target="_blank" class="btn secondary-btn" style="display: none;"><i class="fas fa-external-link-alt"></i> View Original</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="progressBarContainer" class="progress-bar-container" style="display: none;">
+                        <div class="progress-text-wrapper">
+                            <span id="progressMessage" class="progress-message">Starting...</span>
+                            <span id="progressText" class="progress-percentage">0%</span>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div id="progressBar" class="progress-bar"></div>
+                        </div>
+                        <div id="downloadLinkContainer" style="display: none;">
+                            <a id="downloadLink" href="#" target="_blank" download class="btn success-btn download-finished-btn">
+                                <i class="fas fa-check-circle"></i> Download Complete! Click to save.
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="downloaded-videos-section card" style="display:none;">
+                    <h2>Your Downloads</h2>
+                    <div id="downloadedVideosGrid" class="downloaded-videos-grid">
+                        </div>
+                    <div id="noDownloadsMessage" class="no-downloads-message" style="display: none;">
+                        <p>No downloads yet. Start by pasting a YouTube URL above!</p>
+                    </div>
+                </section>
+            </main>
+
+            <section class="features-section">
+                <h2>Why Choose YouTube Video Downloader?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-file-video"></i>
+                        </div>
+                        <h3>Multiple Formats</h3>
+                        <p>Choose from various video and audio qualities to suit your needs</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Fast Processing</h3>
+                        <p>Quick video processing and upload speeds for efficient downloads</p>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>© 2025 YouTube Video Downloader. Built with ❤️ for seamless video management.</p>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Support</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="{{ url_for('static', filename='js/utils.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

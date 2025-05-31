@@ -1,0 +1,222 @@
+{% extends "base.html" %}
+
+{% block title %}Login - YouTube to Drive Downloader{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <style>
+        /* Specific styles for the auth page, overriding or extending base styles */
+        body {
+            /* Ensure the body is a flex container occupying full viewport height */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center;     /* Center vertically */
+            min-height: 100vh;
+            padding: 20px; /* Add some padding around the content */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+
+        /* Adjust the main content wrapper to allow centering */
+        .row.justify-content-center {
+            flex-grow: 1; /* Allow the row to take available space */
+            align-items: center; /* Center items within the row vertically */
+            width: 100%; /* Ensure the row takes full width */
+            max-width: 100%; /* Prevent overflow */
+        }
+
+        .login-container {
+            max-width: 480px; /* Consistent max-width */
+            width: 100%;
+            margin-top: 1rem; /* Adjust margin to prevent excessive spacing */
+            margin-bottom: 1rem; /* Adjust margin */
+        }
+
+        .card {
+            border: none;
+            border-radius: 18px; /* Slightly more rounded */
+            box-shadow: 0 15px 40px rgba(0,0,0,0.18); /* More pronounced, softer shadow */
+            transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow: hidden;
+            background-color: #ffffff; /* Ensure white background for cards */
+        }
+
+        .card:hover {
+            transform: translateY(-8px); /* More lift on hover */
+            box-shadow: 0 25px 60px rgba(0,0,0,0.25); /* More intense shadow on hover */
+        }
+
+        .card-body {
+            padding: 45px; /* Increased padding */
+        }
+
+        .card-header {
+            background-color: #f8f9fa; /* Light background for header */
+            border-bottom: 1px solid #e9ecef;
+            border-top-left-radius: 18px; /* Match card border-radius */
+            border-top-right-radius: 18px; /* Match card border-radius */
+            padding: 1.25rem 1.75rem;
+            font-weight: 600;
+            color: #343a40;
+            font-size: 1.1rem;
+        }
+
+        .fab.fa-google.fa-4x {
+            color: #4285F4; /* Google Blue */
+            font-size: 4.5rem !important; /* Slightly larger icon */
+            margin-bottom: 1rem;
+        }
+
+        h3.card-title {
+            font-size: 2.2rem; /* Larger, more impactful title */
+            font-weight: 700; /* Bolder */
+            color: #212529; /* Darker text for headings */
+            margin-bottom: 1.5rem !important;
+        }
+
+        p.card-text {
+            font-size: 1.05rem; /* Slightly larger body text */
+            line-height: 1.6;
+            color: #555; /* Softer text color */
+            margin-bottom: 2.5rem !important; /* More space below text */
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #4285F4, #3367D6); /* Gradient for button */
+            border: none;
+            border-radius: 10px; /* More rounded button */
+            padding: 14px 30px; /* Larger button */
+            font-size: 1.15rem; /* Larger font in button */
+            font-weight: 600;
+            box-shadow: 0 8px 20px rgba(66, 133, 244, 0.3); /* Stronger button shadow */
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #3367D6, #2a56a5); /* Darker gradient on hover */
+            box-shadow: 0 12px 25px rgba(66, 133, 244, 0.4); /* More intense shadow on hover */
+            transform: translateY(-3px); /* More lift on hover */
+        }
+
+        .btn-primary i {
+            margin-right: 12px; /* More space for icon */
+            font-size: 1.3em;
+        }
+
+        .mt-5 {
+            margin-top: 3rem !important; /* More spacing for the security message */
+        }
+
+        small.text-muted {
+            font-size: 0.95em; /* Slightly larger security text */
+            color: #777 !important;
+        }
+
+        small.text-muted i {
+            margin-right: 8px;
+        }
+
+        ol.small {
+            font-size: 1rem; /* Adjust list item font size */
+            color: #555;
+        }
+
+        ol.small li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        ol.small li i {
+            margin-right: 12px;
+            color: #007bff; /* Primary color checkmark */
+            font-size: 1.25em;
+            line-height: inherit;
+            flex-shrink: 0; /* Prevent icon from shrinking */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 575.98px) {
+            .card-body {
+                padding: 30px;
+            }
+            h3.card-title {
+                font-size: 1.8rem;
+            }
+            p.card-text {
+                font-size: 0.95rem;
+            }
+            .btn-primary {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+            .fab.fa-google.fa-4x {
+                font-size: 3.5rem !important;
+            }
+            ol.small li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-12 d-flex flex-column align-items-center"> {# Added d-flex, flex-column, align-items-center #}
+        <div class="flash-message-container">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+
+        <div class="card login-container"> {# Removed mx-auto here as parent flexbox handles centering #}
+            <div class="card-body text-center">
+                <div class="mb-4">
+                    <i class="fab fa-google fa-4x text-primary"></i>
+                </div>
+                <h3 class="card-title font-weight-bold">Welcome to YouTube Downloader!</h3>
+                <p class="card-text text-muted">
+                    Sign in with your Google account to effortlessly download YouTube videos 
+                    and seamlessly upload them to your Google Drive.
+                </p>
+                <a href="{{ url_for('authenticate') }}" class="btn btn-primary btn-lg">
+                    <i class="fab fa-google"></i>
+                    Sign in with Google
+                </a>
+                
+                <div class="mt-5">
+                    <small class="text-muted">
+                        <i class="fas fa-shield-alt"></i>
+                        Your data is secure and only used for this service.
+                    </small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mt-4 login-container"> {# Removed mx-auto here as parent flexbox handles centering #}
+            <div class="card-header">
+                <h6 class="mb-0"><i class="fas fa-info-circle me-2"></i> How it works</h6>
+            </div>
+            <div class="card-body text-left">
+                <ol class="small">
+                    <li><i class="fas fa-check-circle"></i> Sign in securely with your Google account.</li>
+                    <li><i class="fas fa-check-circle"></i> Paste any YouTube video URL into the downloader.</li>
+                    <li><i class="fas fa-check-circle"></i> Choose your preferred video quality and format.</li>
+                    <li><i class="fas fa-check-circle"></i> Download the video, and it will be automatically uploaded to your Google Drive.</li>
+                    <li><i class="fas fa-check-circle"></i> Access and manage your downloaded videos anytime, directly from your Drive!</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

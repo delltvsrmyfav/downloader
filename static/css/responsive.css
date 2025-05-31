@@ -1,0 +1,146 @@
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 2.2em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .theme-toggle {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .auth-section {
+        margin-bottom: 30px;
+    }
+
+    .auth-status {
+        font-size: 0.95em;
+        padding: 12px 20px;
+    }
+
+    .auth-btn {
+        font-size: 1em;
+        padding: 12px 24px;
+    }
+
+    .download-card,
+    .video-card,
+    .feature-card {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+    }
+
+    .url-form .input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .get-info-btn {
+        width: 100%; /* Full width button on small screens */
+    }
+
+    .message-container {
+        padding: 12px 15px;
+        font-size: 0.9em;
+    }
+
+    .video-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .video-thumbnail-container {
+        width: 100%; /* Full width thumbnail on small screens */
+        max-width: 350px; /* Cap size to prevent excessive stretching */
+    }
+
+    .video-title {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .video-meta {
+        justify-content: center; /* Center meta items */
+        gap: 15px;
+        font-size: 0.9em;
+    }
+
+    .quality-label {
+        font-size: 1em;
+    }
+
+    .quality-select {
+        font-size: 0.95em;
+    }
+
+    .download-btn {
+        width: 100%;
+    }
+
+    .features-section {
+        margin-top: 40px;
+        padding: 0 10px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr; /* Single column for features */
+        gap: 25px;
+    }
+
+    .feature-card {
+        padding: 25px 15px;
+    }
+
+    .feature-card h3 {
+        font-size: 1.3em;
+    }
+
+    .feature-card p {
+        font-size: 0.85em;
+    }
+
+    .footer {
+        margin-top: 40px;
+        padding-top: 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8em;
+    }
+
+    .subtitle {
+        font-size: 0.9em;
+    }
+
+    .auth-status {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+}

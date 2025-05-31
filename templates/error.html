@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+
+{% block title %}Error {{ error_code }} - YouTube to Drive Downloader{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <style>
+        /* Specific styles for the error page, overriding or extending base styles */
+        body {
+            /* Ensure the body is a flex container occupying full viewport height */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center;     /* Center vertically */
+            min-height: 100vh;
+            padding: 20px; /* Add some padding around the content */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+            background: linear-gradient(135deg, #f8d7da 0%, #e0e5ec 100%); /* Soft red gradient for error */
+            color: #343a40; /* Default text color for contrast */
+        }
+
+        /* Adjust the main content wrapper to allow centering */
+        .row.justify-content-center {
+            flex-grow: 1; /* Allow the row to take available space */
+            align-items: center; /* Center items within the row vertically */
+            width: 100%; /* Ensure the row takes full width */
+            max-width: 100%; /* Prevent overflow */
+        }
+
+        .error-container {
+            max-width: 500px; /* Consistent max-width for the error card */
+            width: 100%;
+            margin-top: 1rem; /* Adjust margin to prevent excessive spacing */
+            margin-bottom: 1rem; /* Adjust margin */
+        }
+
+        .card {
+            border: none;
+            border-radius: 18px; /* Consistent rounded corners */
+            box-shadow: 0 15px 40px rgba(0,0,0,0.18); /* Consistent shadow */
+            transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow: hidden;
+            background-color: #ffffff; /* Ensure white background for cards */
+        }
+
+        .card:hover {
+            transform: translateY(-8px); /* Consistent lift on hover */
+            box-shadow: 0 25px 60px rgba(0,0,0,0.25); /* Consistent intense shadow on hover */
+        }
+
+        .card-body {
+            padding: 45px; /* Increased padding */
+        }
+
+        .fas.fa-exclamation-triangle.fa-4x {
+            color: #ffc107; /* Standard warning yellow */
+            font-size: 4.5rem !important; /* Larger icon */
+            margin-bottom: 1.5rem;
+        }
+
+        .display-1 {
+            font-size: 5rem; /* Large, impactful error code */
+            font-weight: 700;
+            color: #dc3545 !important; /* Red for error code */
+            margin-bottom: 1rem;
+        }
+
+        h4.mb-3 {
+            font-size: 1.8rem; /* Larger heading */
+            font-weight: 700;
+            color: #212529; /* Darker text */
+            margin-bottom: 1.5rem !important;
+        }
+
+        p.text-muted.mb-4 {
+            font-size: 1.1rem; /* Larger body text */
+            line-height: 1.6;
+            color: #555 !important; /* Softer text color */
+            margin-bottom: 2.5rem !important;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #4285F4, #3367D6); /* Google Blue gradient */
+            border: none;
+            border-radius: 10px; /* Rounded button */
+            padding: 14px 30px; /* Larger button */
+            font-size: 1.15rem; /* Larger font in button */
+            font-weight: 600;
+            box-shadow: 0 8px 20px rgba(66, 133, 244, 0.3); /* Stronger button shadow */
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #3367D6, #2a56a5); /* Darker gradient on hover */
+            box-shadow: 0 12px 25px rgba(66, 133, 244, 0.4); /* More intense shadow on hover */
+            transform: translateY(-3px); /* More lift on hover */
+        }
+
+        .btn-primary i {
+            margin-right: 12px; /* Space for icon */
+            font-size: 1.3em;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 575.98px) {
+            .card-body {
+                padding: 30px;
+            }
+            .display-1 {
+                font-size: 4rem;
+            }
+            h4.mb-3 {
+                font-size: 1.5rem;
+            }
+            p.text-muted.mb-4 {
+                font-size: 1rem;
+            }
+            .btn-primary {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+            .fas.fa-exclamation-triangle.fa-4x {
+                font-size: 3.5rem !important;
+            }
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-12 d-flex flex-column align-items-center"> {# Added d-flex, flex-column, align-items-center #}
+        <div class="card error-container"> {# Using error-container class for max-width #}
+            <div class="card-body text-center">
+                <div class="mb-4">
+                    <i class="fas fa-exclamation-triangle fa-4x text-warning"></i>
+                </div>
+                <h1 class="display-1">{{ error_code }}</h1>
+                <h4 class="mb-3">Oops! Something went wrong</h4>
+                <p class="text-muted mb-4">{{ error_message }}</p>
+                <a href="{{ url_for('index') if session.get('authenticated') else url_for('login') }}" 
+                   class="btn btn-primary">
+                    <i class="fas fa-home me-2"></i> Go Home
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

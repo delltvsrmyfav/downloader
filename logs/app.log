@@ -1,0 +1,616 @@
+2025-05-26 02:18:49,567 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.9:5000
+2025-05-26 02:18:49,570 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 02:18:49,575 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 02:18:52,695 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 02:18:52,704 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 02:19:00,312 - auth.google_auth - ERROR - Error refreshing credentials: ('invalid_scope: Bad Request', {'error': 'invalid_scope', 'error_description': 'Bad Request'})
+2025-05-26 02:19:00,317 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:19:00] "[32mGET / HTTP/1.1[0m" 302 -
+2025-05-26 02:19:00,973 - auth.google_auth - ERROR - Error refreshing credentials: ('invalid_scope: Bad Request', {'error': 'invalid_scope', 'error_description': 'Bad Request'})
+2025-05-26 02:19:00,996 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:19:00] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:19:01,631 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:19:01] "GET /static/css/main.css HTTP/1.1" 200 -
+2025-05-26 02:19:01,632 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:19:01] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-05-26 02:19:02,627 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:19:02] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:19:06,169 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:19:06] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 02:19:28,083 - auth.google_auth - ERROR - Error refreshing credentials: ('invalid_scope: Bad Request', {'error': 'invalid_scope', 'error_description': 'Bad Request'})
+2025-05-26 02:19:28,084 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:19:28] "[32mGET / HTTP/1.1[0m" 302 -
+2025-05-26 02:19:28,719 - auth.google_auth - ERROR - Error refreshing credentials: ('invalid_scope: Bad Request', {'error': 'invalid_scope', 'error_description': 'Bad Request'})
+2025-05-26 02:19:28,720 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:19:28] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:19:28,767 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:19:28] "GET /static/css/main.css HTTP/1.1" 200 -
+2025-05-26 02:19:29,076 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:19:29] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-05-26 02:19:30,170 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:19:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-26 02:19:30,172 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:19:30] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:19:30,421 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:19:30] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 02:19:46,833 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:19:46] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 02:21:01,006 - auth.google_auth - ERROR - Error refreshing credentials: ('invalid_scope: Bad Request', {'error': 'invalid_scope', 'error_description': 'Bad Request'})
+2025-05-26 02:21:01,007 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:21:01] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:21:01,261 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:21:01] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:23:25,428 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.9:5000
+2025-05-26 02:23:25,429 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 02:23:25,434 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 02:23:27,384 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 02:23:27,412 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 02:23:28,390 - auth.google_auth - ERROR - Error refreshing credentials: ('invalid_scope: Bad Request', {'error': 'invalid_scope', 'error_description': 'Bad Request'})
+2025-05-26 02:23:28,411 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:23:28] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:23:28,646 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:23:28] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 02:23:28,685 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:23:28] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 02:23:29,045 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:23:29] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:23:30,261 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:23:30] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 02:23:39,253 - auth.google_auth - ERROR - Error refreshing credentials: ('invalid_scope: Bad Request', {'error': 'invalid_scope', 'error_description': 'Bad Request'})
+2025-05-26 02:23:39,254 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:23:39] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:23:39,278 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:23:39] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 02:23:39,278 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:23:39] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 02:23:39,601 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:23:39] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:24:19,409 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.9:5000
+2025-05-26 02:24:19,410 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 02:24:19,412 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 02:24:20,984 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 02:24:20,988 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 02:24:24,652 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:24:24] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:24:24,763 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:24:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 02:24:24,888 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:24:24] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 02:24:25,206 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:24:25] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:24:27,887 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:24:27] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 02:24:35,926 - __main__ - ERROR - OAuth callback error: Scope has changed from "https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email" to "https://www.googleapis.com/auth/drive.file openid https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email".
+2025-05-26 02:24:35,928 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:24:35] "[32mGET /callback?state=y8K3kpEiX6AinhbDsObNqBY3zgvPZM&code=4/0AUJR-x7WW0awinKS81LJn5rE3a5r8eoY1y4xI2wqCQXlumUiv35IMqLwFk94zdPhKqf_nw&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid+https://www.googleapis.com/auth/drive.file&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+2025-05-26 02:24:35,936 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:24:35] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:24:36,404 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:24:36] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 02:24:36,405 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:24:36] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 02:24:36,653 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:24:36] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:26:12,390 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.9:5000
+2025-05-26 02:26:12,391 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 02:26:12,393 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 02:26:13,805 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 02:26:13,810 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 02:26:16,403 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:16] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:26:16,531 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:16] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 02:26:16,638 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:16] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 02:26:16,957 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:16] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:26:18,463 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:18] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 02:26:19,620 - __main__ - ERROR - OAuth callback error: Scope has changed from "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/userinfo.email" to "openid https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/userinfo.email".
+2025-05-26 02:26:19,621 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:19] "[32mGET /callback?state=0UWNGvKHzKeF139wHerKOwV4Mt6Sxa&code=4/0AUJR-x4EGVkL94ztgMJrRRIpB77WO22amKuhWLGWL4_i7mIhi_uxZFcHcvFKJXArB5Xnaw&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+openid+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/drive.file&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2025-05-26 02:26:19,626 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:19] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:26:19,971 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:19] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 02:26:19,972 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 02:26:20,224 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:20] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:26:22,538 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:22] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 02:26:23,529 - __main__ - ERROR - OAuth callback error: Scope has changed from "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/userinfo.email" to "openid https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/userinfo.email".
+2025-05-26 02:26:23,530 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:23] "[32mGET /callback?state=AxkT6fgduIvYEpWpp4SUe8cnemgoFb&code=4/0AUJR-x4c1gz1xFZTb3dDsQ1AyyzwugiqAnoXEfCpcSAEsXVKXUsx79PWSnLIF7vL2l6V5g&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+openid+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/drive.file&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2025-05-26 02:26:23,537 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:23] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:26:23,873 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:23] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 02:26:23,874 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:23] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 02:26:24,122 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:24] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:26:24,948 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:24] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 02:26:25,941 - __main__ - ERROR - OAuth callback error: Scope has changed from "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/userinfo.email" to "openid https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/userinfo.email".
+2025-05-26 02:26:25,942 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:25] "[32mGET /callback?state=JaHtxF770DhA9VVAjF0cNrB0EqH8Iv&code=4/0AUJR-x5dVQv-JGsM1cBS9SWuwrj3alrLrn1jz2Vl30-yjW_GWw0v9hsqg_Kl-Iw69qX1cg&scope=email+profile+openid+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/drive.file+https://www.googleapis.com/auth/userinfo.email&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2025-05-26 02:26:25,947 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:25] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:26:26,286 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:26] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 02:26:26,287 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 02:26:26,539 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:26:26] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:27:23,434 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.9:5000
+2025-05-26 02:27:23,442 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 02:27:23,447 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 02:27:27,707 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 02:27:27,723 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 02:27:29,524 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:27:29] "[32mGET / HTTP/1.1[0m" 302 -
+2025-05-26 02:27:29,626 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:27:29] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:27:30,181 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:27:30] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 02:27:30,462 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:27:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 02:27:30,987 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:27:30] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:27:31,630 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:27:31] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 02:27:34,326 - __main__ - ERROR - OAuth callback error: Scope has changed from "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/drive.file" to "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/drive.file openid".
+2025-05-26 02:27:34,329 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:27:34] "[32mGET /callback?state=PstulJYQ3cie0Xt4ipkgWudIRf7e7L&code=4/0AUJR-x63CRGtbQnUeRwB8Vpq4riEVn7Lv_wCz4fKkghhsoZcaEvbnImXzJui9YoA9GxiEQ&scope=email+profile+openid+https://www.googleapis.com/auth/drive.file+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2025-05-26 02:27:34,353 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:27:34] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:27:34,742 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:27:34] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 02:27:34,749 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:27:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 02:27:35,023 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:27:35] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:48:02,263 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.9:5000
+2025-05-26 02:48:02,264 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 02:48:02,267 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 02:48:03,896 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 02:48:03,908 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 02:48:04,213 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:48:04] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:48:04,465 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:48:04] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 02:48:04,582 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:48:04] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 02:48:04,924 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:48:04] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:48:07,082 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:48:07] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 02:48:08,232 - __main__ - ERROR - OAuth callback error: Scope has changed from "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/drive.file" to "https://www.googleapis.com/auth/userinfo.email openid https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/drive.file".
+2025-05-26 02:48:08,233 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:48:08] "[32mGET /callback?state=eTI6sp5HFFhXelYMifHMEAKY1czHhE&code=4/0AUJR-x4FItuuej1ucP2bjKX4O9LF0HiIQQ4W1l14IEo7uKwmzHWmsA38eYOavL_6CgQQww&scope=email+profile+https://www.googleapis.com/auth/drive.file+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2025-05-26 02:48:08,553 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:48:08] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:48:08,815 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:48:08] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 02:48:08,899 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:48:08] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 02:48:08,920 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:48:08] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:50:17,237 - werkzeug - INFO -  * Detected change in 'D:\\youtube_downloader_bot\\auth\\google_auth.py', reloading
+2025-05-26 02:50:17,495 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 02:50:19,324 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 02:50:19,331 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 02:50:26,286 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:26] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:50:26,420 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:26] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 02:50:26,521 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 02:50:26,853 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:26] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:50:27,204 - auth.google_auth - INFO - Generated auth URL: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=826775078589-1qhngtar02l08q8hdbra8ad3933mh5j7.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Fcallback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.file+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&state=4xMu7yHx2riGf3QM1ZxM7CN4rxNhTe&access_type=offline&include_granted_scopes=true
+2025-05-26 02:50:27,206 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:27] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 02:50:28,391 - auth.google_auth - INFO - Credentials saved to token.json
+2025-05-26 02:50:28,391 - auth.google_auth - INFO - OAuth callback handled successfully. Credentials obtained.
+2025-05-26 02:50:28,394 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:28] "[32mGET /callback?state=4xMu7yHx2riGf3QM1ZxM7CN4rxNhTe&code=4/0AUJR-x7T1ahRIOidqXus3-eyrd9KI9EXLDmw5_yvB89U5JLNYp7t_e2STFYYNGr0QCVstg&scope=email+profile+https://www.googleapis.com/auth/drive.file+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2025-05-26 02:50:28,712 - auth.google_auth - ERROR - Error loading credentials from token.json: Authorized user info was not in the expected format, missing fields refresh_token.
+2025-05-26 02:50:28,713 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:28] "[32mGET / HTTP/1.1[0m" 302 -
+2025-05-26 02:50:28,963 - auth.google_auth - ERROR - Error loading credentials from token.json: Authorized user info was not in the expected format, missing fields refresh_token.
+2025-05-26 02:50:28,964 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:28] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:50:29,033 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 02:50:29,295 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 02:50:29,307 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:29] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:50:32,181 - auth.google_auth - INFO - Generated auth URL: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=826775078589-1qhngtar02l08q8hdbra8ad3933mh5j7.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Fcallback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.file+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&state=rbhOytfIsADKYP09LKb6Qwj8IugsSn&access_type=offline&include_granted_scopes=true
+2025-05-26 02:50:32,182 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:32] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 02:50:33,149 - auth.google_auth - INFO - Credentials saved to token.json
+2025-05-26 02:50:33,150 - auth.google_auth - INFO - OAuth callback handled successfully. Credentials obtained.
+2025-05-26 02:50:33,151 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:33] "[32mGET /callback?state=rbhOytfIsADKYP09LKb6Qwj8IugsSn&code=4/0AUJR-x7tTn47KJb_02zpTie6h5XACBUdrsojLZE3RrVBx1tcL73NKRadEbzKlw1po1kL9Q&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+openid+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/drive.file&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2025-05-26 02:50:33,156 - auth.google_auth - ERROR - Error loading credentials from token.json: Authorized user info was not in the expected format, missing fields refresh_token.
+2025-05-26 02:50:33,156 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:33] "[32mGET / HTTP/1.1[0m" 302 -
+2025-05-26 02:50:33,478 - auth.google_auth - ERROR - Error loading credentials from token.json: Authorized user info was not in the expected format, missing fields refresh_token.
+2025-05-26 02:50:33,480 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:33] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:50:33,731 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:33] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 02:50:33,813 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 02:50:33,822 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:50:33] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 02:52:40,248 - auth.google_auth - INFO - Generated auth URL: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=826775078589-1qhngtar02l08q8hdbra8ad3933mh5j7.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Fcallback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.file+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&state=vDuANRb8HeAAG4YzYdzwETEQr9HCWb&access_type=offline&include_granted_scopes=true
+2025-05-26 02:52:40,250 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:52:40] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 02:52:48,378 - auth.google_auth - INFO - Credentials saved to token.json
+2025-05-26 02:52:48,381 - auth.google_auth - INFO - OAuth callback handled successfully. Credentials obtained.
+2025-05-26 02:52:48,383 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:52:48] "[32mGET /callback?state=vDuANRb8HeAAG4YzYdzwETEQr9HCWb&code=4/0AUJR-x7NQdujzNpXYGomUecuD3aLPhLlH2D6zlgH8fFlKT4RLnGKAHe-ukL9f8Ftd8uQ5Q&scope=email+profile+openid+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/drive.file+https://www.googleapis.com/auth/userinfo.email&authuser=2&prompt=none HTTP/1.1[0m" 302 -
+2025-05-26 02:52:48,404 - auth.google_auth - ERROR - Error loading credentials from token.json: Authorized user info was not in the expected format, missing fields refresh_token.
+2025-05-26 02:52:48,407 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:52:48] "[32mGET / HTTP/1.1[0m" 302 -
+2025-05-26 02:52:48,748 - auth.google_auth - ERROR - Error loading credentials from token.json: Authorized user info was not in the expected format, missing fields refresh_token.
+2025-05-26 02:52:48,751 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:52:48] "GET /login HTTP/1.1" 200 -
+2025-05-26 02:52:49,088 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:52:49] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 02:52:49,423 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:52:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 02:52:50,199 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 02:52:50] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 03:18:11,904 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 03:18:11,906 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 03:18:11,906 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 03:18:13,174 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.9:5000
+2025-05-26 03:18:13,174 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 03:18:13,177 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 03:18:14,695 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 03:18:14,695 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 03:18:14,696 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 03:18:14,726 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 03:18:14,736 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 03:18:24,920 - auth.google_auth - ERROR - Error loading credentials from token.json: Authorized user info was not in the expected format, missing fields refresh_token.
+2025-05-26 03:18:24,950 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:24] "GET /login HTTP/1.1" 200 -
+2025-05-26 03:18:25,120 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:25] "GET /static/css/responsive.css HTTP/1.1" 200 -
+2025-05-26 03:18:25,164 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:25] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 03:18:25,330 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 03:18:25,333 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:25] "GET /static/js/utils.js HTTP/1.1" 200 -
+2025-05-26 03:18:26,382 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:26] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 03:18:30,524 - auth.google_auth - INFO - Generated auth URL: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=826775078589-1qhngtar02l08q8hdbra8ad3933mh5j7.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Fcallback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.file+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&state=hBHKbE00EJdcMoOy27UdSo5X8mKyGG&access_type=offline&include_granted_scopes=true
+2025-05-26 03:18:30,530 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:30] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 03:18:31,778 - auth.google_auth - INFO - Credentials saved to token.json
+2025-05-26 03:18:31,779 - auth.google_auth - INFO - OAuth callback handled successfully. Credentials obtained.
+2025-05-26 03:18:31,795 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:31] "[32mGET /callback?state=hBHKbE00EJdcMoOy27UdSo5X8mKyGG&code=4/0AUJR-x5em4dWXyK-agsp99UbRgMsLmqd07qmgURw6DFU2ypHIawvDndJtAeKNiTtelNKXA&scope=email+profile+https://www.googleapis.com/auth/drive.file+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2025-05-26 03:18:32,116 - auth.google_auth - ERROR - Error loading credentials from token.json: Authorized user info was not in the expected format, missing fields refresh_token.
+2025-05-26 03:18:32,116 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:32] "[32mGET / HTTP/1.1[0m" 302 -
+2025-05-26 03:18:32,382 - auth.google_auth - ERROR - Error loading credentials from token.json: Authorized user info was not in the expected format, missing fields refresh_token.
+2025-05-26 03:18:32,383 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:32] "GET /login HTTP/1.1" 200 -
+2025-05-26 03:18:32,427 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 03:18:32,745 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:32] "[36mGET /static/css/responsive.css HTTP/1.1[0m" 304 -
+2025-05-26 03:18:32,747 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 03:18:32,747 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:32] "[36mGET /static/js/utils.js HTTP/1.1[0m" 304 -
+2025-05-26 03:18:33,101 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:33] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 03:18:38,909 - auth.google_auth - INFO - Generated auth URL: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=826775078589-1qhngtar02l08q8hdbra8ad3933mh5j7.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Fcallback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.file+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&state=QvBZawEtlipVlnMqclvVZKZJfql5zG&access_type=offline&include_granted_scopes=true
+2025-05-26 03:18:38,910 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:38] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 03:18:40,083 - auth.google_auth - INFO - Credentials saved to token.json
+2025-05-26 03:18:40,084 - auth.google_auth - INFO - OAuth callback handled successfully. Credentials obtained.
+2025-05-26 03:18:40,092 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:40] "[32mGET /callback?state=QvBZawEtlipVlnMqclvVZKZJfql5zG&code=4/0AUJR-x4zaYeldOcvtryWexiNnExpZuZL5lEENF0ObaiJQtqtnnf5lp2R44sgAq7z9xagXQ&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+openid+https://www.googleapis.com/auth/drive.file+https://www.googleapis.com/auth/userinfo.email&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2025-05-26 03:18:40,115 - auth.google_auth - ERROR - Error loading credentials from token.json: Authorized user info was not in the expected format, missing fields refresh_token.
+2025-05-26 03:18:40,118 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:40] "[32mGET / HTTP/1.1[0m" 302 -
+2025-05-26 03:18:40,441 - auth.google_auth - ERROR - Error loading credentials from token.json: Authorized user info was not in the expected format, missing fields refresh_token.
+2025-05-26 03:18:40,443 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:40] "GET /login HTTP/1.1" 200 -
+2025-05-26 03:18:40,692 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:40] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 03:18:40,794 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:40] "[36mGET /static/css/responsive.css HTTP/1.1[0m" 304 -
+2025-05-26 03:18:40,794 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:40] "[36mGET /static/js/utils.js HTTP/1.1[0m" 304 -
+2025-05-26 03:18:40,795 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:40] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 03:18:40,835 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:18:40] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 03:20:04,946 - werkzeug - INFO -  * Detected change in 'D:\\youtube_downloader_bot\\auth\\google_auth.py', reloading
+2025-05-26 03:20:05,133 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 03:20:06,467 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 03:20:06,467 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:20:06,468 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 03:20:06,468 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:20:06,468 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 03:20:06,499 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 03:20:06,504 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 03:20:10,910 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:10] "GET /login HTTP/1.1" 200 -
+2025-05-26 03:20:11,032 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:11] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 03:20:11,102 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:11] "[36mGET /static/css/responsive.css HTTP/1.1[0m" 304 -
+2025-05-26 03:20:11,260 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:11] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 03:20:11,262 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:11] "[36mGET /static/js/utils.js HTTP/1.1[0m" 304 -
+2025-05-26 03:20:11,592 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:11] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 03:20:13,098 - auth.google_auth - INFO - Generated auth URL. Stored state: cG5ghtAKQAY4k6KRBl8HbNyCAyZHaP
+2025-05-26 03:20:13,100 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:13] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 03:20:14,220 - auth.google_auth - INFO - Credentials successfully saved to token.json
+2025-05-26 03:20:14,221 - auth.google_auth - INFO - OAuth callback handled successfully. Credentials obtained and session marked as authenticated.
+2025-05-26 03:20:14,224 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:14] "[32mGET /callback?state=cG5ghtAKQAY4k6KRBl8HbNyCAyZHaP&code=4/0AUJR-x7pUa9C04MbujpjxgxK8-XGuPqVXWLMPkwdx-5Ki5eR6uyjhoSZGC2G4vqKjc8XIg&scope=email+profile+https://www.googleapis.com/auth/drive.file+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2025-05-26 03:20:14,230 - auth.google_auth - ERROR - Error loading credentials from token.json: Authorized user info was not in the expected format, missing fields refresh_token.
+2025-05-26 03:20:14,230 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:14] "[32mGET / HTTP/1.1[0m" 302 -
+2025-05-26 03:20:14,543 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:14] "GET /login HTTP/1.1" 200 -
+2025-05-26 03:20:14,811 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:14] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 03:20:14,883 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:14] "[36mGET /static/css/responsive.css HTTP/1.1[0m" 304 -
+2025-05-26 03:20:14,894 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:14] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 03:20:14,894 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:14] "[36mGET /static/js/utils.js HTTP/1.1[0m" 304 -
+2025-05-26 03:20:14,939 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:14] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 03:20:19,491 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:19] "GET /login HTTP/1.1" 200 -
+2025-05-26 03:20:19,524 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:19] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 03:20:19,743 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:19] "[36mGET /static/css/responsive.css HTTP/1.1[0m" 304 -
+2025-05-26 03:20:19,836 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 03:20:19,837 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:19] "[36mGET /static/js/utils.js HTTP/1.1[0m" 304 -
+2025-05-26 03:20:20,175 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:20] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 03:20:20,912 - auth.google_auth - INFO - Generated auth URL. Stored state: 8An9NNVZpSf0kuMtLxTn92mFRO0jq9
+2025-05-26 03:20:20,913 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:20] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 03:20:22,025 - auth.google_auth - INFO - Credentials successfully saved to token.json
+2025-05-26 03:20:22,027 - auth.google_auth - INFO - OAuth callback handled successfully. Credentials obtained and session marked as authenticated.
+2025-05-26 03:20:22,029 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:22] "[32mGET /callback?state=8An9NNVZpSf0kuMtLxTn92mFRO0jq9&code=4/0AUJR-x6UvxYEiNMeyX4dzkKJWI53WTAPtenFkBG9cms5XjKU6WmEHP8-ljBRkkRoXug7RA&scope=email+profile+https://www.googleapis.com/auth/drive.file+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2025-05-26 03:20:22,041 - auth.google_auth - ERROR - Error loading credentials from token.json: Authorized user info was not in the expected format, missing fields refresh_token.
+2025-05-26 03:20:22,044 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:22] "[32mGET / HTTP/1.1[0m" 302 -
+2025-05-26 03:20:22,378 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:22] "GET /login HTTP/1.1" 200 -
+2025-05-26 03:20:22,644 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:22] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 03:20:22,743 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:22] "[36mGET /static/css/responsive.css HTTP/1.1[0m" 304 -
+2025-05-26 03:20:22,743 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 03:20:22,744 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:22] "[36mGET /static/js/utils.js HTTP/1.1[0m" 304 -
+2025-05-26 03:20:22,858 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:20:22] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 03:21:25,771 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 03:21:25,792 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:21:25,795 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 03:21:25,796 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:21:25,796 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 03:21:27,180 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.9:5000
+2025-05-26 03:21:27,181 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 03:21:27,183 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 03:21:28,931 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 03:21:28,932 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:21:28,932 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 03:21:28,934 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:21:28,936 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 03:21:28,969 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 03:21:28,982 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 03:21:29,259 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:21:29] "GET /login HTTP/1.1" 200 -
+2025-05-26 03:21:29,504 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:21:29] "[36mGET /static/css/responsive.css HTTP/1.1[0m" 304 -
+2025-05-26 03:21:29,511 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:21:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 03:21:29,627 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:21:29] "[36mGET /static/js/utils.js HTTP/1.1[0m" 304 -
+2025-05-26 03:21:29,629 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:21:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 03:21:29,987 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:21:29] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 03:21:31,552 - auth.google_auth - INFO - Generated auth URL. Stored state: Pt99RKBa8H5ECXJpMp9aP5UYx7IuFB
+2025-05-26 03:21:31,556 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:21:31] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 03:21:36,233 - auth.google_auth - INFO - Credentials successfully saved to token.json
+2025-05-26 03:21:36,241 - auth.google_auth - INFO - OAuth callback handled successfully. Credentials obtained and session marked as authenticated.
+2025-05-26 03:21:36,244 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:21:36] "[32mGET /callback?state=Pt99RKBa8H5ECXJpMp9aP5UYx7IuFB&code=4/0AUJR-x4Xizdj3pZYyjR69QWLCMZCLF2c1A74WJjVSnng3FEmJ1WQgxGqyKRScRuu5wZGqw&scope=email+profile+https://www.googleapis.com/auth/drive.file+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2025-05-26 03:21:36,258 - auth.google_auth - ERROR - Error loading credentials from token.json: Authorized user info was not in the expected format, missing fields refresh_token.
+2025-05-26 03:21:36,259 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:21:36] "[32mGET / HTTP/1.1[0m" 302 -
+2025-05-26 03:21:36,590 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:21:36] "GET /login HTTP/1.1" 200 -
+2025-05-26 03:21:36,844 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:21:36] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 03:21:36,949 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:21:36] "[36mGET /static/css/responsive.css HTTP/1.1[0m" 304 -
+2025-05-26 03:21:36,950 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:21:36] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 03:21:36,950 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:21:36] "[36mGET /static/js/utils.js HTTP/1.1[0m" 304 -
+2025-05-26 03:21:37,119 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:21:37] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 03:23:51,776 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 03:23:51,776 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:23:51,777 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 03:23:51,777 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:23:51,777 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 03:23:53,056 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.9:5000
+2025-05-26 03:23:53,057 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 03:23:53,059 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 03:23:54,283 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 03:23:54,283 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:23:54,284 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 03:23:54,284 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:23:54,284 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 03:23:54,313 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 03:23:54,318 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 03:24:00,281 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:24:00] "GET /login HTTP/1.1" 200 -
+2025-05-26 03:24:00,454 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:24:00] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 03:24:00,528 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:24:00] "[36mGET /static/css/responsive.css HTTP/1.1[0m" 304 -
+2025-05-26 03:24:00,629 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:24:00] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 03:24:00,630 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:24:00] "[36mGET /static/js/utils.js HTTP/1.1[0m" 304 -
+2025-05-26 03:24:00,967 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:24:00] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 03:24:02,479 - auth.google_auth - INFO - Generated auth URL. Stored state: ic4OQSXrTddVsDYfVA0R7OV4WBh26G
+2025-05-26 03:24:02,481 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:24:02] "[32mGET /auth HTTP/1.1[0m" 302 -
+2025-05-26 03:24:26,245 - auth.google_auth - INFO - Credentials successfully saved to token.json
+2025-05-26 03:24:26,246 - auth.google_auth - INFO - OAuth callback handled successfully. Credentials obtained and session marked as authenticated.
+2025-05-26 03:24:26,248 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:24:26] "[32mGET /callback?state=ic4OQSXrTddVsDYfVA0R7OV4WBh26G&code=4/0AUJR-x4snjNUHctaUHO-2enySbuZBYE4QosHaLx0AQLBUpD7qAmAJo5r2GFRYUWejbUYqw&scope=email%20profile%20https://www.googleapis.com/auth/drive.file%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email%20openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+2025-05-26 03:24:26,282 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 03:24:28,528 - auth.google_auth - INFO - Successfully retrieved user info for delltvs00@gmail.com
+2025-05-26 03:24:28,530 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 03:24:30,875 - downloads.drive_uploader - INFO - Found existing Google Drive folder: 'YouTube Downloads' with ID: 16Gyp4KG_Pk-A0wjEGCyuak37Y2Yi1I7x
+2025-05-26 03:24:30,876 - downloads.drive_uploader - INFO - Google Drive service and folder initialized successfully.
+2025-05-26 03:24:31,543 - downloads.drive_uploader - INFO - Found 2 files in Google Drive folder 'YouTube Downloads'.
+2025-05-26 03:24:31,631 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:24:31] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-26 03:24:31,983 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:24:31] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-26 03:24:31,984 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:24:31] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-26 03:24:32,242 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:24:32] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=eo7FZaVR7YcJAvOCMDWF HTTP/1.1" 200 -
+2025-05-26 03:24:32,427 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:24:32] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-26 03:26:45,559 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 03:26:45,559 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:26:45,560 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 03:26:45,560 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:26:45,560 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 03:26:47,015 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.9:5000
+2025-05-26 03:26:47,024 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 03:26:47,027 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 03:26:48,267 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 03:26:48,268 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:26:48,268 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 03:26:48,269 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:26:48,269 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 03:26:48,295 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 03:26:48,308 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 03:26:55,036 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 03:26:57,689 - auth.google_auth - INFO - Successfully retrieved user info for delltvs00@gmail.com
+2025-05-26 03:26:57,693 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 03:27:00,074 - downloads.drive_uploader - INFO - Found existing Google Drive folder: 'YouTube Downloads' with ID: 16Gyp4KG_Pk-A0wjEGCyuak37Y2Yi1I7x
+2025-05-26 03:27:00,076 - downloads.drive_uploader - INFO - Google Drive service and folder initialized successfully.
+2025-05-26 03:27:01,018 - downloads.drive_uploader - INFO - Found 2 files in Google Drive folder 'YouTube Downloads'.
+2025-05-26 03:27:01,037 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:27:01] "GET / HTTP/1.1" 200 -
+2025-05-26 03:28:15,751 - downloads.youtube_downloader - ERROR - An unexpected error occurred getting video info for https://youtu.be/AbkEmIgJMcU?si=j_esPYeDOSv4s2Md: invalid literal for int() with base 10: '192x144'
+2025-05-26 03:28:15,752 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:28:15] "POST /video-info HTTP/1.1" 200 -
+2025-05-26 03:28:45,735 - downloads.youtube_downloader - ERROR - An unexpected error occurred getting video info for https://youtu.be/AbkEmIgJMcU?si=j_esPYeDOSv4s2Md: invalid literal for int() with base 10: '192x144'
+2025-05-26 03:28:45,736 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:28:45] "POST /video-info HTTP/1.1" 200 -
+2025-05-26 03:30:18,515 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 03:30:18,516 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:30:18,516 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 03:30:18,516 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:30:18,517 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 03:30:20,103 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.9:5000
+2025-05-26 03:30:20,105 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 03:30:20,110 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 03:30:21,761 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 03:30:21,762 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:30:21,762 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 03:30:21,763 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:30:21,763 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 03:30:21,786 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 03:30:21,806 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 03:30:24,797 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 03:30:25,964 - auth.google_auth - INFO - Successfully retrieved user info for delltvs00@gmail.com
+2025-05-26 03:30:25,968 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 03:30:27,541 - downloads.drive_uploader - INFO - Found existing Google Drive folder: 'YouTube Downloads' with ID: 16Gyp4KG_Pk-A0wjEGCyuak37Y2Yi1I7x
+2025-05-26 03:30:27,543 - downloads.drive_uploader - INFO - Google Drive service and folder initialized successfully.
+2025-05-26 03:30:27,976 - downloads.drive_uploader - INFO - Found 2 files in Google Drive folder 'YouTube Downloads'.
+2025-05-26 03:30:27,999 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:30:27] "GET / HTTP/1.1" 200 -
+2025-05-26 03:30:48,451 - downloads.youtube_downloader - ERROR - An unexpected error occurred getting video info for https://youtu.be/AbkEmIgJMcU?si=j_esPYeDOSv4s2Md: '<' not supported between instances of 'NoneType' and 'int'
+2025-05-26 03:30:48,452 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:30:48] "POST /video-info HTTP/1.1" 200 -
+2025-05-26 03:32:28,924 - werkzeug - INFO -  * Detected change in 'D:\\youtube_downloader_bot\\downloads\\youtube_downloader.py', reloading
+2025-05-26 03:32:29,219 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 03:32:30,969 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 03:32:30,970 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:32:30,970 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 03:32:30,970 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:32:30,971 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 03:32:31,012 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 03:32:31,018 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 03:32:46,600 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 03:32:46,657 - downloads.youtube_downloader - INFO - Successfully retrieved info for: Afusic - Pal Pal with @Talwiinder  (Official Visualiser) Prod. @AliSoomroMusic (ID: AbkEmIgJMcU)
+2025-05-26 03:32:46,666 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:32:46] "POST /video-info HTTP/1.1" 200 -
+2025-05-26 03:32:48,137 - auth.google_auth - INFO - Successfully retrieved user info for delltvs00@gmail.com
+2025-05-26 03:32:48,139 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 03:32:49,570 - downloads.drive_uploader - INFO - Found existing Google Drive folder: 'YouTube Downloads' with ID: 16Gyp4KG_Pk-A0wjEGCyuak37Y2Yi1I7x
+2025-05-26 03:32:49,570 - downloads.drive_uploader - INFO - Google Drive service and folder initialized successfully.
+2025-05-26 03:32:50,082 - downloads.drive_uploader - INFO - Found 2 files in Google Drive folder 'YouTube Downloads'.
+2025-05-26 03:32:50,101 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:32:50] "GET / HTTP/1.1" 200 -
+2025-05-26 03:34:35,432 - downloads.youtube_downloader - INFO - Successfully retrieved info for: Afusic - Pal Pal with @Talwiinder  (Official Visualiser) Prod. @AliSoomroMusic (ID: AbkEmIgJMcU)
+2025-05-26 03:34:35,435 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:34:35] "POST /video-info HTTP/1.1" 200 -
+2025-05-26 03:34:44,674 - downloads.youtube_downloader - INFO - Successfully retrieved info for: Afusic - Pal Pal with @Talwiinder  (Official Visualiser) Prod. @AliSoomroMusic (ID: AbkEmIgJMcU)
+2025-05-26 03:34:44,676 - downloads.youtube_downloader - INFO - Attempting to download video as mp4 (quality: best) for https://youtu.be/AbkEmIgJMcU?si=j_esPYeDOSv4s2Md
+2025-05-26 03:36:47,411 - downloads.youtube_downloader - INFO - Finished processing: temp\Afusic_-_Pal_Pal_with_@Talwiinder_Official_Visualiser_Prod._@AliSoomroMusic.f401.mp4
+2025-05-26 03:36:51,166 - downloads.youtube_downloader - INFO - Finished processing: temp\Afusic_-_Pal_Pal_with_@Talwiinder_Official_Visualiser_Prod._@AliSoomroMusic.f140.m4a
+2025-05-26 03:36:52,429 - downloads.youtube_downloader - INFO - Video 'Afusic - Pal Pal with @Talwiinder  (Official Visualiser) Prod. @AliSoomroMusic' downloaded to D:\youtube_downloader_bot\temp\Afusic_-_Pal_Pal_with_@Talwiinder_Official_Visualiser_Prod._@AliSoomroMusic.mp4
+2025-05-26 03:56:09,250 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 03:56:09,251 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:56:09,252 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 03:56:09,253 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:56:09,253 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 03:56:10,853 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.9:5000
+2025-05-26 03:56:10,859 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 03:56:10,861 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 03:56:13,789 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 03:56:13,790 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:56:13,791 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 03:56:13,792 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 03:56:13,793 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 03:56:13,829 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 03:56:13,842 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 03:56:16,562 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 03:56:18,234 - auth.google_auth - INFO - Successfully retrieved user info for delltvs00@gmail.com
+2025-05-26 03:56:18,255 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 03:56:20,251 - downloads.drive_uploader - INFO - Found existing Google Drive folder: 'YouTube Downloads' with ID: 16Gyp4KG_Pk-A0wjEGCyuak37Y2Yi1I7x
+2025-05-26 03:56:20,254 - downloads.drive_uploader - INFO - Google Drive service and folder initialized successfully.
+2025-05-26 03:56:20,756 - downloads.drive_uploader - INFO - Found 2 files in Google Drive folder 'YouTube Downloads'.
+2025-05-26 03:56:20,869 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:56:20] "GET / HTTP/1.1" 200 -
+2025-05-26 03:56:21,257 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:56:21] "GET /static/css/responsive.css HTTP/1.1" 200 -
+2025-05-26 03:56:21,259 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:56:21] "GET /static/css/main.css HTTP/1.1" 200 -
+2025-05-26 03:56:21,315 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:56:21] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 03:56:21,334 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:56:21] "[36mGET /static/js/utils.js HTTP/1.1[0m" 304 -
+2025-05-26 03:56:21,981 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 03:56:21] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 04:00:34,565 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 04:00:34,565 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 04:00:34,566 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 04:00:34,566 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 04:00:34,567 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 04:00:35,816 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.9:5000
+2025-05-26 04:00:35,834 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 04:00:35,836 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 04:00:39,154 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 04:00:39,158 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 04:00:39,159 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 04:00:39,161 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 04:00:39,162 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 04:00:39,210 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 04:00:39,225 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 04:00:39,767 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 04:00:41,982 - auth.google_auth - INFO - Successfully retrieved user info for delltvs00@gmail.com
+2025-05-26 04:00:41,994 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 04:00:44,382 - downloads.drive_uploader - INFO - Found existing Google Drive folder: 'YouTube Downloads' with ID: 16Gyp4KG_Pk-A0wjEGCyuak37Y2Yi1I7x
+2025-05-26 04:00:44,392 - downloads.drive_uploader - INFO - Google Drive service and folder initialized successfully.
+2025-05-26 04:00:44,948 - downloads.drive_uploader - INFO - Found 2 files in Google Drive folder 'YouTube Downloads'.
+2025-05-26 04:00:45,096 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:00:45] "GET / HTTP/1.1" 200 -
+2025-05-26 04:00:46,061 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:00:46] "[36mGET /static/css/responsive.css HTTP/1.1[0m" 304 -
+2025-05-26 04:00:46,072 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:00:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 04:00:46,095 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:00:46] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 04:00:46,103 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:00:46] "[36mGET /static/js/utils.js HTTP/1.1[0m" 304 -
+2025-05-26 04:00:46,253 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:00:46] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 04:01:34,202 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:01:34] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 04:01:34,211 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:01:34] "[36mGET /static/css/responsive.css HTTP/1.1[0m" 304 -
+2025-05-26 04:01:34,285 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:01:34] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-26 04:08:11,962 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 04:08:11,963 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 04:08:11,964 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 04:08:11,964 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 04:08:11,965 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 04:08:13,758 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.9:5000
+2025-05-26 04:08:13,759 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 04:08:13,760 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 04:08:16,453 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 04:08:16,454 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 04:08:16,455 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 04:08:16,456 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 04:08:16,456 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 04:08:16,493 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 04:08:16,506 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 04:08:16,864 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 04:08:18,498 - auth.google_auth - INFO - Successfully retrieved user info for delltvs00@gmail.com
+2025-05-26 04:08:18,501 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 04:08:20,325 - downloads.drive_uploader - INFO - Found existing Google Drive folder: 'YouTube Downloads' with ID: 16Gyp4KG_Pk-A0wjEGCyuak37Y2Yi1I7x
+2025-05-26 04:08:20,334 - downloads.drive_uploader - INFO - Google Drive service and folder initialized successfully.
+2025-05-26 04:08:20,792 - downloads.drive_uploader - INFO - Found 2 files in Google Drive folder 'YouTube Downloads'.
+2025-05-26 04:08:20,951 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:08:20] "GET / HTTP/1.1" 200 -
+2025-05-26 04:08:21,735 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:08:21] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 04:08:21,738 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:08:21] "[36mGET /static/js/utils.js HTTP/1.1[0m" 304 -
+2025-05-26 04:08:21,754 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:08:21] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-26 04:08:21,762 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:08:21] "[36mGET /static/css/responsive.css HTTP/1.1[0m" 304 -
+2025-05-26 04:08:21,883 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:08:21] "GET /socket.io/?EIO=4&transport=polling&t=PS9j57p HTTP/1.1" 200 -
+2025-05-26 04:08:22,198 - __main__ - INFO - Client connected: iN-KjD9LGu5y63dzAAAB
+2025-05-26 04:08:22,201 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:08:22] "POST /socket.io/?EIO=4&transport=polling&t=PS9j582&sid=df_OOTtQGmKyeIJ3AAAA HTTP/1.1" 200 -
+2025-05-26 04:08:22,202 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:08:22] "GET /socket.io/?EIO=4&transport=polling&t=PS9j587&sid=df_OOTtQGmKyeIJ3AAAA HTTP/1.1" 200 -
+2025-05-26 04:08:22,248 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:08:22] "[33mGET /static/js/sw.js HTTP/1.1[0m" 404 -
+2025-05-26 04:08:22,451 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:08:22] "GET /socket.io/?EIO=4&transport=polling&t=PS9j5DL&sid=df_OOTtQGmKyeIJ3AAAA HTTP/1.1" 200 -
+2025-05-26 04:12:10,797 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 04:12:10,798 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 04:12:10,798 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 04:12:10,799 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 04:12:10,799 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 04:12:12,817 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.9:5000
+2025-05-26 04:12:12,819 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 04:12:12,821 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 04:12:15,779 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 04:12:15,780 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 04:12:15,781 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 04:12:15,782 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 04:12:15,783 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 04:12:15,816 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 04:12:15,834 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 04:12:16,143 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:12:16] "GET /socket.io/?EIO=4&transport=polling&t=PS9jzY_ HTTP/1.1" 200 -
+2025-05-26 04:12:16,173 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 04:12:17,794 - auth.google_auth - INFO - Successfully retrieved user info for delltvs00@gmail.com
+2025-05-26 04:12:17,799 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 04:12:19,739 - downloads.drive_uploader - INFO - Found existing Google Drive folder: 'YouTube Downloads' with ID: 16Gyp4KG_Pk-A0wjEGCyuak37Y2Yi1I7x
+2025-05-26 04:12:19,740 - downloads.drive_uploader - INFO - Google Drive service and folder initialized successfully.
+2025-05-26 04:12:20,253 - downloads.drive_uploader - INFO - Found 2 files in Google Drive folder 'YouTube Downloads'.
+2025-05-26 04:12:20,435 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:12:20] "GET / HTTP/1.1" 200 -
+2025-05-26 04:12:21,232 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:12:21] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 04:12:21,241 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:12:21] "[36mGET /static/css/responsive.css HTTP/1.1[0m" 304 -
+2025-05-26 04:12:21,368 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:12:21] "GET /socket.io/?EIO=4&transport=polling&t=PS9j_bq HTTP/1.1" 200 -
+2025-05-26 04:12:21,749 - __main__ - INFO - Client connected: 84xqJtYyqDFPGxy_AAAC
+2025-05-26 04:12:21,755 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:12:21] "POST /socket.io/?EIO=4&transport=polling&t=PS9j_cr&sid=WBlWUh9hG6dK59FjAAAB HTTP/1.1" 200 -
+2025-05-26 04:12:21,757 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:12:21] "GET /socket.io/?EIO=4&transport=polling&t=PS9j_cs&sid=WBlWUh9hG6dK59FjAAAB HTTP/1.1" 200 -
+2025-05-26 04:12:30,297 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:12:30] "[36mGET /static/css/responsive.css HTTP/1.1[0m" 304 -
+2025-05-26 04:12:30,300 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:12:30] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 04:12:30,384 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:12:30] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-26 04:15:27,419 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 04:15:27,421 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 04:15:27,422 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 04:15:27,423 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 04:15:27,423 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 04:15:28,757 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.9:5000
+2025-05-26 04:15:28,759 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 04:15:28,760 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 04:15:31,739 - utils - INFO - Logging setup complete. Level: INFO
+2025-05-26 04:15:31,739 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 04:15:31,740 - downloads.youtube_downloader - INFO - YouTubeDownloader initialized. Download directory: temp
+2025-05-26 04:15:31,741 - auth.google_auth - INFO - GoogleAuth initialized with configured scopes.
+2025-05-26 04:15:31,741 - downloads.drive_uploader - INFO - DriveUploader initialized.
+2025-05-26 04:15:31,764 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 04:15:31,775 - werkzeug - INFO -  * Debugger PIN: 817-355-164
+2025-05-26 04:15:32,410 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:15:32] "GET /socket.io/?EIO=4&transport=polling&t=PS9kjfN HTTP/1.1" 200 -
+2025-05-26 04:15:32,441 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 04:15:32,758 - __main__ - INFO - Client connected: Abt1NME_TfmkINCTAAAB
+2025-05-26 04:15:32,760 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:15:32] "POST /socket.io/?EIO=4&transport=polling&t=PS9kkF9&sid=HWBbqp8-luvUkWQzAAAA HTTP/1.1" 200 -
+2025-05-26 04:15:32,791 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:15:32] "GET /socket.io/?EIO=4&transport=polling&t=PS9kkFQ&sid=HWBbqp8-luvUkWQzAAAA HTTP/1.1" 200 -
+2025-05-26 04:15:34,811 - auth.google_auth - INFO - Successfully retrieved user info for delltvs00@gmail.com
+2025-05-26 04:15:34,824 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 04:15:37,601 - downloads.drive_uploader - INFO - Found existing Google Drive folder: 'YouTube Downloads' with ID: 16Gyp4KG_Pk-A0wjEGCyuak37Y2Yi1I7x
+2025-05-26 04:15:37,610 - downloads.drive_uploader - INFO - Google Drive service and folder initialized successfully.
+2025-05-26 04:15:37,841 - __main__ - INFO - Client disconnected: Abt1NME_TfmkINCTAAAB
+2025-05-26 04:15:37,870 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:15:37] "GET /socket.io/?EIO=4&transport=websocket&sid=HWBbqp8-luvUkWQzAAAA HTTP/1.1" 200 -
+2025-05-26 04:15:38,220 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-26 04:15:38,261 - downloads.drive_uploader - INFO - Found 2 files in Google Drive folder 'YouTube Downloads'.
+2025-05-26 04:15:38,371 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:15:38] "GET / HTTP/1.1" 200 -
+2025-05-26 04:15:41,590 - auth.google_auth - INFO - Successfully retrieved user info for delltvs00@gmail.com
+2025-05-26 04:15:42,555 - downloads.drive_uploader - INFO - Found 2 files in Google Drive folder 'YouTube Downloads'.
+2025-05-26 04:15:42,558 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:15:42] "GET / HTTP/1.1" 200 -
+2025-05-26 04:15:42,841 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:15:42] "GET /static/css/responsive.css HTTP/1.1" 200 -
+2025-05-26 04:15:42,848 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:15:42] "GET /static/css/main.css HTTP/1.1" 200 -
+2025-05-26 04:15:45,278 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:15:45] "GET /socket.io/?EIO=4&transport=polling&t=PS9knI_ HTTP/1.1" 200 -
+2025-05-26 04:15:45,529 - __main__ - INFO - Client connected: GFLStVrk578eet1MAAAD
+2025-05-26 04:15:45,531 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:15:45] "POST /socket.io/?EIO=4&transport=polling&t=PS9knOA&sid=bD2mthfqv6F2-AfxAAAC HTTP/1.1" 200 -
+2025-05-26 04:15:45,605 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:15:45] "GET /socket.io/?EIO=4&transport=polling&t=PS9knOH&sid=bD2mthfqv6F2-AfxAAAC HTTP/1.1" 200 -
+2025-05-26 04:18:04,093 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:18:04] "[36mGET /static/css/responsive.css HTTP/1.1[0m" 304 -
+2025-05-26 04:18:04,094 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:18:04] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-05-26 04:18:04,193 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 04:18:04] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-26 04:20:46,102 - werkzeug - INFO -  * Detected change in 'D:\\youtube_downloader_bot\\app.py', reloading
+2025-05-26 04:20:46,320 - werkzeug - INFO -  * Restarting with stat

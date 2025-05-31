@@ -1,0 +1,715 @@
+/* Core Variables & Reset */
+:root {
+    /* Dark Theme Colors (Default) */
+    --bg-color: #1a1a2e; /* Deep, rich background */
+    --text-color: #e0e0e0;
+    --heading-color: #ffffff;
+    --card-bg: #21213b; /* Slightly lighter card background */
+    --border-color: #3f3f5e;
+    --primary-color: #bb86fc; /* Vibrant purple for accents */
+    --primary-dark-color: #8c4dc7; /* Darker purple for hover/active */
+    --secondary-color: #03dac6; /* Teal for subtle highlights */
+    --button-text-color: #ffffff;
+    --disabled-color: #555555;
+    --error-bg: #c2002f; /* Strong red for errors */
+    --error-text: #ffffff;
+    --success-bg: #28a745; /* Green for success */
+    --success-text: #ffffff;
+    --input-bg: #2a2a4a;
+    --input-border: #4a4a75;
+    --input-focus-border: var(--primary-color);
+    --placeholder-color: #999999;
+    --overlay-color: rgba(0, 0, 0, 0.6); /* For video thumbnail overlay */
+
+    /* Card Shadows */
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --card-hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] {
+    --bg-color: #f0f2f5;
+    --text-color: #333333;
+    --heading-color: #1a1a2e;
+    --card-bg: #ffffff;
+    --border-color: #e0e0e0;
+    --primary-color: #6200ee;
+    --primary-dark-color: #3700b3;
+    --secondary-color: #018786;
+    --button-text-color: #ffffff;
+    --disabled-color: #cccccc;
+    --error-bg: #dc3545;
+    --error-text: #ffffff;
+    --success-bg: #28a745;
+    --success-text: #ffffff;
+    --input-bg: #ffffff;
+    --input-border: #cccccc;
+    --input-focus-border: var(--primary-color);
+    --placeholder-color: #777777;
+    --overlay-color: rgba(255, 255, 255, 0.6);
+
+    /* Card Shadows */
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --card-hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Header */
+.header {
+    background-color: var(--card-bg);
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Constrain header content width */
+}
+
+.title {
+    color: var(--heading-color);
+    font-size: 2em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title .fab.fa-youtube {
+    color: #FF0000; /* YouTube red */
+    font-size: 1.2em;
+}
+
+.beta-tag {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    font-size: 0.7em;
+    padding: 4px 8px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-weight: 600;
+    vertical-align: super;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--primary-color);
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Download Section */
+.download-section h2 {
+    color: var(--heading-color);
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-group input[type="text"] {
+    flex-grow: 1;
+    padding: 12px 18px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.input-group input[type="text"]::placeholder {
+    color: var(--placeholder-color);
+}
+
+.input-group input[type="text"]:focus {
+    border-color: var(--input-focus-border);
+    box-shadow: 0 0 0 3px rgba(var(--primary-color-rgb), 0.3);
+    outline: none;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none; /* For download link button */
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-dark-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-btn {
+    background-color: var(--secondary-color);
+    color: var(--button-text-color);
+}
+
+.secondary-btn:hover {
+    background-color: #00b09f; /* A darker teal */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:disabled {
+    background-color: var(--disabled-color);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Spinner */
+.spinner {
+    border: 4px solid rgba(var(--primary-color-rgb), 0.2);
+    border-top: 4px solid var(--primary-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    display: none; /* Hidden by default */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Message Containers (Error/Success) */
+.message-container {
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.error-message-container {
+    background-color: var(--error-bg);
+    color: var(--error-text);
+}
+
+.success-message-container {
+    background-color: var(--success-bg);
+    color: var(--success-text);
+}
+
+.message-text {
+    flex-grow: 1;
+}
+
+.close-message {
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-left: 15px;
+}
+
+/* Video Info Display */
+.video-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.video-thumbnail {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+}
+
+.video-details {
+    width: 100%;
+    text-align: left;
+}
+
+.video-title {
+    color: var(--heading-color);
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.video-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 0.9em;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.video-description {
+    font-size: 0.95em;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    white-space: pre-wrap; /* Preserve formatting from yt-dlp */
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--input-bg);
+}
+
+.summary-container {
+    background-color: rgba(var(--secondary-color-rgb), 0.1);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.summary-container h4 {
+    color: var(--heading-color);
+    margin-bottom: 10px;
+}
+
+.quality-selection {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quality-selection label {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.quality-select {
+    width: 100%;
+    padding: 12px 18px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 1em;
+    appearance: none; /* Remove default select arrow */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23b7b7b7%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-6.5%200-12.3%203.2-16.1%208.1-3.9%204.9-5.4%2011.6-4%2017.9l139%20139.2c3.2%203.2%207.1%204.8%2011.1%204.8s7.9-1.6%2011.1-4.8l139-139.2c3.9-6.3%202.4-13.9-1.6-17.9z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+.quality-select:focus {
+    outline: none;
+    border-color: var(--input-focus-border);
+    box-shadow: 0 0 0 3px rgba(var(--primary-color-rgb), 0.3);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    margin-top: 30px;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.progress-text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.progress-message {
+    font-size: 1em;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.progress-percentage {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.progress-bar-wrapper {
+    width: 100%;
+    height: 25px;
+    background-color: var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: var(--secondary-color); /* Teal color for progress */
+    border-radius: 8px;
+    transition: width 0.4s ease-out;
+}
+
+.download-finished-btn {
+    margin-top: 20px;
+    display: block; /* Make it a block level element */
+    width: fit-content; /* Adjust width to content */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--success-bg);
+    color: var(--success-text);
+}
+
+.download-finished-btn:hover {
+    background-color: #1e7e34; /* Darker green */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Downloaded Videos Section (Initially hidden as per your original JS) */
+.downloaded-videos-section h2 {
+    color: var(--heading-color);
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.downloaded-videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.downloaded-video-item {
+    background-color: var(--input-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.downloaded-video-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.downloaded-video-thumbnail {
+    width: 100%;
+    height: 180px; /* Fixed height for consistency */
+    object-fit: cover;
+}
+
+.downloaded-video-details {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.downloaded-video-title {
+    color: var(--heading-color);
+    font-size: 1.2em;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.downloaded-video-meta {
+    font-size: 0.85em;
+    color: var(--placeholder-color);
+}
+
+.downloaded-video-actions {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border-top: 1px solid var(--border-color);
+    justify-content: flex-end;
+}
+
+.action-btn {
+    padding: 8px 15px;
+    font-size: 0.9em;
+    border-radius: 6px;
+}
+
+.delete-btn {
+    background-color: var(--error-bg);
+    color: var(--error-text);
+}
+
+.delete-btn:hover {
+    background-color: #9d0027; /* Darker red */
+}
+
+/* Features Section */
+.features-section {
+    background-color: var(--card-bg);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+}
+
+.features-section h2 {
+    color: var(--heading-color);
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.feature-card {
+    background-color: var(--input-bg);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.feature-icon {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: var(--heading-color);
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 0.9em;
+    color: var(--text-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--card-bg);
+    padding: 20px 30px;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    font-size: 0.85em;
+    color: var(--placeholder-color);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.footer-link {
+    color: var(--placeholder-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+}
+
+/* Utility classes for spacing, etc. */
+.mt-20 { margin-top: 20px; }
+.mb-20 { margin-bottom: 20px; }
+.text-center { text-align: center; }
+
+/* Responsive Adjustments (from responsive.css, keeping consistent) */
+/* The actual responsive.css would be separate, but I'll ensure styles match for now */
+/* You should keep your responsive.css file as is. */
+
+/* Basic responsiveness for smaller screens if not covered by responsive.css */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .title {
+        font-size: 1.7em;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group button {
+        width: 100%;
+    }
+
+    .video-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video-thumbnail-container {
+        width: 100%;
+        max-width: 350px; /* Constrain on smaller screens */
+    }
+
+    .video-title {
+        font-size: 1.7em;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .video-meta {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .quality-select {
+        padding: 12px 15px;
+        font-size: 1em;
+    }
+
+    .downloaded-videos-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        gap: 20px;
+    }
+
+    .downloaded-video-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .downloaded-video-details {
+        padding: 15px;
+        align-items: center;
+    }
+
+    .downloaded-video-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+        margin-top: 15px;
+    }
+
+    .action-btn {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}

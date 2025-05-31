@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light"> {# Added data-bs-theme attribute, default to light #}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}YouTube to Drive Downloader{% endblock %}</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet">
+
+    <style>
+        /* Global CSS Variables for Theming (moved from index.html for global scope) */
+        :root {
+            /* Light Mode Defaults */
+            --body-bg: #f8f9fa;
+            --navbar-bg: #343a40; /* Dark for light mode navbar */
+            --navbar-text: rgba(255, 255, 255, 0.55); /* Lighter text for dark navbar */
+            --navbar-link-hover: rgba(255, 255, 255, 0.75);
+            --footer-bg: #343a40;
+            --footer-text: #f8f9fa;
+        }
+
+        /* Dark Mode Overrides */
+        html[data-bs-theme='dark'] {
+            --body-bg: #212529; /* Dark background for body */
+            --navbar-bg: #1a1e21; /* Even darker for dark mode navbar */
+            --navbar-text: rgba(255, 255, 255, 0.75); /* Brighter text for dark navbar */
+            --navbar-link-hover: rgba(255, 255, 255, 1);
+            --footer-bg: #1a1e21;
+            --footer-text: #adb5bd;
+        }
+
+        /* Global styles that apply to all pages */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--body-bg); /* Now controlled by CSS variable */
+            min-height: 100vh; /* Ensure body takes full height */
+            display: flex;
+            flex-direction: column;
+            transition: background-color 0.3s ease; /* Smooth transition for background */
+        }
+        .navbar {
+            background-color: var(--navbar-bg) !important; /* Apply variable, use !important to override Bootstrap's bg-dark */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: background-color 0.3s ease; /* Smooth transition for navbar */
+        }
+        .navbar-brand {
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            color: var(--footer-text); /* Use footer-text for brand color for consistency */
+        }
+        .navbar-brand i {
+            margin-right: 8px;
+        }
+        .navbar-nav .nav-link {
+            color: var(--navbar-text);
+            transition: color 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover {
+            color: var(--navbar-link-hover);
+        }
+        main {
+            flex: 1; /* Allow main content to grow and push footer down */
+            padding-bottom: 20px; /* Space above footer */
+        }
+        .footer {
+            background-color: var(--footer-bg); /* Apply variable */
+            color: var(--footer-text); /* Apply variable */
+            padding: 15px 0;
+            text-align: center;
+            margin-top: auto; /* Push footer to the bottom */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for footer */
+        }
+        .alert {
+            border-radius: 8px;
+            margin-top: 15px; /* Space below navbar */
+        }
+    </style>
+
+    {% block head %}{% endblock %} {# Allows child templates to add to the head #}
+</head>
+<body>
+    <div id="jsMessages"></div> {# This div is now in base.html for global messages #}
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">
+                <i class="fab fa-youtube text-danger"></i>
+                YouTube to Drive
+            </a>
+            
+            {% if session.get('authenticated') %}
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="{{ url_for('logout') }}">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </div>
+            {% endif %}
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        {# Flash messages handled by displayMessage JS function now #}
+        {# Removed the original Jinja2 flash message block from here #}
+
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 YouTube to Drive Downloader. Made with ❤️</p>
+        </div>
+    </footer>
+
+    {# Bootstrap 5 JS Bundle #}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    {# Assuming main.js and utils.js are for other purposes or will be integrated into index.html's script block #}
+    {# <script src="{{ url_for('static', filename='js/main.js') }}"></script> #}
+    {# <script src="{{ url_for('static', filename='js/utils.js') }}"></script> #}
+    {% block scripts %}{% endblock %} {# Allows child templates to add custom JS #}
+</body>
+</html>
